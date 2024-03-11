@@ -1,5 +1,5 @@
 body {
-    background-image: url('vintage-old-rustic-cutlery-dark.jpg'); /* Replace 'pizza_background.jpg' with the path to your background image */
+    background-image: url(images/vintage-old-rustic-cutlery-dark.jpg); /* Replace 'pizza_background.jpg' with the path to your background image */
     background-size: cover; /* Cover the entire viewport */
     background-position: center; /* Center the background image */
     font-family: Arial, sans-serif;
