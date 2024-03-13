@@ -1,30 +1,22 @@
+/* styles.css */
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #333;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
+    background-color: #f2f2f2;
 }
 
 header {
-    background-color: #222;
+    background-color: #333;
     color: #fff;
-    padding: 20px 0;
-}
-
-header h1 {
-    margin: 0;
+    padding: 20px;
+    text-align: center;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
-    margin: 0;
 }
 
 nav ul li {
@@ -33,38 +25,36 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
     color: #fff;
+    text-decoration: none;
 }
 
 main {
-    padding: 50px 0;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
 section {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 h2 {
-    font-size: 24px;
-}
-
-footer {
-    background-color: #222;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    color: #333;
 }
 
 .button {
     display: inline-block;
-    background-color: #007bff;
-    color: #fff;
     padding: 10px 20px;
+    background-color: #666;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
 }
 
-.button:hover {
-    background-color: #0056b3;
+.review {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
 }
