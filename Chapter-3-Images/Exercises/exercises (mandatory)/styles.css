@@ -1,3 +1,9 @@
+body{
+    background-color: rgb(26, 25, 25);
+    
+}
+
+
 .image-container {
     display: flex; /* Use flexbox */
     justify-content: space-between; /* Distribute items evenly along the main axis */
@@ -18,4 +24,22 @@ img {
  h1{
     margin: 0;
     padding: 20px 0;
+    color: #ffffff;
  }
+
+ img{
+    max-width: 100;
+    height: auto;
+ }
+ .blur{
+    filter: blur(2px);
+ }
+ .grayscale{
+    filter: grayscale(100%);
+ }
+.invert{
+    filter:saturate(2)
+}
+p {
+    color: #ffffff;
+}
