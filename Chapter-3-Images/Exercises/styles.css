@@ -1,0 +1,21 @@
+.image-container {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+}
+
+figure {
+    flex: 0 0 auto; /* Ensure figures don't grow or shrink */
+    margin: 0; /* Remove default margin */
+}
+
+img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+ header{
+    text-align: center;
+ }
+ h1{
+    margin: 0;
+    padding: 20px 0;
+ }
