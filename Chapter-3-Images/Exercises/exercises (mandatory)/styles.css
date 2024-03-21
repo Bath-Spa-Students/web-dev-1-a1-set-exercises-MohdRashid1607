@@ -1,9 +1,7 @@
 body{
-    background-color: rgb(26, 25, 25);
+    background-color: rgb(26, 25, 25);/*This tag changes the background color*/
     
 }
-
-
 .image-container {
     display: flex; /* Use flexbox */
     justify-content: space-between; /* Distribute items evenly along the main axis */
@@ -19,7 +17,7 @@ img {
     height: auto; /* Maintain aspect ratio */
 }
  header{
-    text-align: center;
+    text-align: center;/*this tag brings the text centre*/
  }
  h1{
     margin: 0;
@@ -32,10 +30,10 @@ img {
     height: auto;
  }
  .blur{
-    filter: blur(2px);
+    filter: blur(2px);/*this filter brings the blue effect on the image*/
  }
  .grayscale{
-    filter: grayscale(100%);
+    filter: grayscale(100%);/*the filter brings grayscale effect on the image*/
  }
 .invert{
     filter:saturate(2)
