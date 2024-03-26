@@ -68,7 +68,7 @@ footer {
 
 .welcome img {
     max-width: 100%; /* Ensures image doesn't exceed container width */
-    height: auto; /* Maintains aspect ratio */
+    height: 120px; /* Maintains aspect ratio */
     display: block; /* Ensures proper display */
     margin-top: 20px;
 }
