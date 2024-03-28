@@ -15,7 +15,6 @@ body, html {
   
     /* I set the flex-direction to column. */
     flex-direction: column;
-  
     justify-content: center;
     align-items: center;
     height: 100%;
