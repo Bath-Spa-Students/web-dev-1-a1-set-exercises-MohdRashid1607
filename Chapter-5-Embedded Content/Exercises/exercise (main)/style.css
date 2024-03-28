@@ -32,6 +32,4 @@ body, html {
   
     /* I set the height to auto to retain the video's aspect ratio. */
     height: auto; 
-    
-    /* I set the maximum width of the video to 1000 pixels. */
     max-width: 1000px;}
