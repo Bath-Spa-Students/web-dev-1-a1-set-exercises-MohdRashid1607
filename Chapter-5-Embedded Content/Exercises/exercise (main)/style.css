@@ -18,7 +18,6 @@ body, html {
   
     /* I set the justify-content to center the content vertically. */
     justify-content: center;
-  
     align-items: center;
     height: 100%;
   }
