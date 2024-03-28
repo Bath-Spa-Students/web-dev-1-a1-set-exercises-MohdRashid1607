@@ -5,12 +5,10 @@ body, html {
     /* I set the height of the body to 100% so that it would fill the entire viewport. */
     height: 100%;
   
-    /* I set the margin to 0 to remove the default margin. */
     margin: 0;
   }
   
   .Embed-Video {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
