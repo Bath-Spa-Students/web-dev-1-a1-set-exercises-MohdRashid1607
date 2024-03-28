@@ -1,7 +1,6 @@
 body, html {
     /* I set the background to have a linear gradient. This gradient starts from a beige color (#CFB997) at the top to a gray color (#7F7F7F) at the bottom. */
     background: linear-gradient(to bottom, #18130c, #3e2f2f);
-  
     height: 100%;
     margin: 0;
   }
