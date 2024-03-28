@@ -13,7 +13,6 @@ body, html {
     /* I set the display to flex. */
     display: flex;
   
-    /* I set the flex-direction to column. */
     flex-direction: column;
     justify-content: center;
     align-items: center;
