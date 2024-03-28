@@ -29,7 +29,5 @@ body, html {
   video {
     /* I set the width of the video to 100% so that it would fill the entire space. */
     width: 100%;
-  
-    /* I set the height to auto to retain the video's aspect ratio. */
     height: auto; 
     max-width: 1000px;}
