@@ -3,26 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alan Partridge Soundboard</title>
+    <title>Petrol Calculator</title>
+
+    <!--adding a faviicon we use the relation icon and state the file type of the image-->
+    <link rel="icon" type="image/png" href="images/petrolicon.png">
+
+    <!--linking a stylesheet-->
     <link rel="stylesheet" href="style.css">
+
+    <!--to use custom font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Alan Partridge Soundboard</h1>
-    </header>
-    <section id="audio-samples">
-        <!-- Audio samples will be dynamically added here -->
-        <audio id="sample1" src="Audio Sampler/" preload="auto"></audio>
-        <audio id="sample2" src="audio/sample2.mp3" preload="auto"></audio>
-    </section>
-    <section id="text-to-speech">
-        <textarea id="text-input" placeholder="Enter text to convert to speech..."></textarea>
-        <button id="text-to-speech-btn">Convert to Speech</button>
-    </section>
-    <section id="pagination">
-        <button id="prev-page">Previous Page</button>
-        <button id="next-page">Next Page</button>
-    </section>
+
+    <!--giving the container div an id so we can customize it seperatly from other divs-->
+    <div id="div1">
+        <h2>Petrol Calculator</h2><hr>
+        <p>Petrol price in £/L</p>
+
+        <!--we use input to allow users to input data, the type of data is number and we add a placeholder-->
+        <input id="Petrolcost" type="number" placeholder="1.72">
+        <p>Liters</p>
+        <input id="Liters" type="number" placeholder="1">
+        <div>
+            <!--when the user clicks the button the function "calc" executes-->
+            <button onclick="calc()">Calculate</button>
+            <p>Total cost:</p>
+
+            <!--p tag with the id totalcost so we can place the total cost here-->
+            <p id="totalcost"></p>
+        </div>
+    </div>
+
+    <!--running the js file-->
     <script src="index.js"></script>
 </body>
 </html>
