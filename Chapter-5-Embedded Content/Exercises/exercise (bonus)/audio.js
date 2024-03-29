@@ -1,7 +1,15 @@
-function playAudio(clicked_id) {
-    //call audio
-    var audio = new Audio("Audio Sampler/Audio/" + clicked_id + ".mp3"); /* "Audio Sampler/Audio/" = location of audios
-                                                                            clicked_id = id of the button
-                                                                            ".mp3" = audio file extension string */
-    audio.play(); //play audio
+function playSoundEffect(audioFileName) {
+    var audio = new Audio('audio/' + audioFileName);
+    audio.play();
+}
+
+function textToAudio() {
+    let msg = document.getElementById("text-to-speech").value;
+    let speech = new SpeechSynthesisUtterance();
+    speech.lang = "en-US";
+    speech.text = msg;
+    speech.volume = 1;
+    speech.rate = 1;
+    speech.pitch = 1;
+    window.speechSynthesis.speak(speech);
 }
