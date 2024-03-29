@@ -46,3 +46,29 @@ prevPageBtn.addEventListener("click", () => {
 nextPageBtn.addEventListener("click", () => {
     // Handle next page logic
 });
+// Audio samples
+const audioSamples = [
+    { name: "Sample 1", id: "ah-ha.mp3" },
+    { name: "Sample 2", id: "sample2" },
+    // Add more samples as needed
+];
+
+// Function to play audio sample
+function playAudioSample(sampleId) {
+    const audio = document.getElementById(sampleId);
+    audio.play();
+}
+
+// Populate audio samples section
+const audioSamplesSection = document.getElementById("audio-samples");
+audioSamples.forEach(sample => {
+    const audioSampleDiv = document.createElement("div");
+    audioSampleDiv.classList.add("audio-sample");
+    const button = document.createElement("button");
+    button.textContent = sample.name;
+    button.addEventListener("click", () => {
+        playAudioSample(sample.id);
+    });
+    audioSampleDiv.appendChild(button);
+    audioSamplesSection.appendChild(audioSampleDiv);
+});
