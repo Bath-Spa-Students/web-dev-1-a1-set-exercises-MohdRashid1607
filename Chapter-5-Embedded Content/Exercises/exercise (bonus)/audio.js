@@ -1,74 +1,18 @@
-// Audio samples
-const audioSamples = [
-    { name: "Sample 1", src: "audio/sample1.mp3" },
-    { name: "Sample 2", src: "audio/sample2.mp3" },
-    // Add more samples as needed
-];
+function calc(){ //creating a function called "calc"
 
-// Function to create audio sample buttons
-function createAudioSampleButton(sample) {
-    const button = document.createElement("button");
-    button.textContent = sample.name;
-    button.addEventListener("click", () => {
-        const audio = new Audio(sample.src);
-        audio.play();
-    });
-    return button;
+    //retrives values from the input field from the html file with the matching id and stores them in the respective variables.
+    //parseFloat converts the datatype to Float
+    var petrol_cost = parseFloat(document.getElementById('Petrolcost').value); 
+    var  total_liters = parseFloat(document.getElementById('Liters').value);
+    
+    //to check if the values inserted are numbers by using "isNan"
+    if(isNaN(petrol_cost) || isNaN(total_liters)){
+        
+        //if they arent a number then the output will be "Invalid input"
+        document.querySelector('#totalcost').innerText = "Invalid input";
+    } else {
+
+        //if the requirment is satisfed the "petrol_cost" variable is multipled with the "total_liters" variable
+        document.querySelector('#totalcost').innerText = "£" + petrol_cost * total_liters;
+    }
 }
-
-// Populate audio samples section
-const audioSamplesSection = document.getElementById("audio-samples");
-audioSamples.forEach(sample => {
-    const audioSampleDiv = document.createElement("div");
-    audioSampleDiv.classList.add("audio-sample");
-    const button = createAudioSampleButton(sample);
-    audioSampleDiv.appendChild(button);
-    audioSamplesSection.appendChild(audioSampleDiv);
-});
-
-// Text-to-speech
-const textToSpeechBtn = document.getElementById("text-to-speech-btn");
-textToSpeechBtn.addEventListener("click", () => {
-    const textInput = document.getElementById("text-input").value;
-    const utterance = new SpeechSynthesisUtterance(textInput);
-    speechSynthesis.speak(utterance);
-});
-
-// Pagination
-const prevPageBtn = document.getElementById("prev-page");
-const nextPageBtn = document.getElementById("next-page");
-
-// Add event listeners for pagination buttons
-prevPageBtn.addEventListener("click", () => {
-    // Handle previous page logic
-});
-
-nextPageBtn.addEventListener("click", () => {
-    // Handle next page logic
-});
-// Audio samples
-const audioSamples = [
-    { name: "Sample 1", id: "ah-ha.mp3" },
-    { name: "Sample 2", id: "sample2" },
-    // Add more samples as needed
-];
-
-// Function to play audio sample
-function playAudioSample(sampleId) {
-    const audio = document.getElementById(sampleId);
-    audio.play();
-}
-
-// Populate audio samples section
-const audioSamplesSection = document.getElementById("audio-samples");
-audioSamples.forEach(sample => {
-    const audioSampleDiv = document.createElement("div");
-    audioSampleDiv.classList.add("audio-sample");
-    const button = document.createElement("button");
-    button.textContent = sample.name;
-    button.addEventListener("click", () => {
-        playAudioSample(sample.id);
-    });
-    audioSampleDiv.appendChild(button);
-    audioSamplesSection.appendChild(audioSampleDiv);
-});
