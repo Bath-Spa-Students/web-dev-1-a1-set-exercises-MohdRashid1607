@@ -1,0 +1,80 @@
+*{
+    margin:0; /*sets margin to 0*/
+    padding:0; /*sets padding to 0*/
+    box-sizing: border-box; /*takes into account padding and margins when selecting a width and height*/
+}
+
+body{
+    background-image: url(images/petrol.jpg); /*to add a background image*/
+    background-size: cover; /*image covers the whole screen*/
+    background-repeat: no-repeat; /* makes sure the images doesnt repeat*/
+    min-height: 100vh; /*min height means that the element will be as tall as the viewport's height*/
+    display: flex; /*sets display to flex*/
+    justify-content: center; /*justifies content to the center*/
+    align-items: center; /*alings items to the center*/
+    font-family: "Roboto" /*selects font*/
+}
+
+
+body::before{ /*to add a dark filter to the image so the calculator div pops more */
+    z-index: -1; /*sends the filter behind the main div*/
+    content: ""; /*to create an empty element*/
+    position: absolute; /*position is absolute*/
+    top:0; /*position is at the top*/
+    width:100%; /*takes up 100% of the width of the viewport*/
+    height: 100%; /*takes up 100% of the height of the viewport*/
+    background: rgba(0, 0, 0, 0.6); /*controls the color*/
+}
+
+p{
+    text-align: left; /*aligns paragraph texts to the left*/
+}
+
+
+#div1{
+    text-align: center; /*centers the text*/
+    background-color: white; /*controls the background color*/
+    padding: 20px; /*sets padding to 20px*/
+    width: 30%; /*div takes up 30% of the width of the screen*/
+    border-radius: 5px; /*adds a curve to the edges of the border*/
+    box-shadow: 0 0 10px white, 0 0 40px white, 0 0 50px black; /*adds a shadow/glow effect to the div*/
+}
+
+div hr{
+    margin: 14px 0; /*top and bottom margin set to 14px, left and right set to 0px*/
+    padding: 1px; /*padding set to 1px*/
+    background-color: #0096FF; /*control the background color*/
+    border-radius: 5px; /*adds a curve to the edges of the border*/
+}
+
+
+div input[type=number]{
+    margin: 8px 0; /*top and bottom margin set to 8px, left and right set to 0px*/
+    padding: 8px; /*padding set to 1px*/
+    width: 100%; /* the box of the input takes up 100% of the width of the div */
+    font-size: 16px; /*font size of the placeholder and the numbers inputted*/
+}
+
+button{
+    margin: 0 4px; /*top and bottom margin set to 0, left and right set to 4px*/
+    padding: 6px 0; /*top and bottom padding set to 6px, left and right set to 0*/
+    width: 90px; /*width of the button*/
+    border: 1px; /*border of the button*/
+    border-radius: 5px; /*adds a curve to the border edges*/
+    background-color: #0096FF; /*controls background color*/
+    font-size: 15px; /*controls text size*/
+    font-weight: bold; /*bolds the text*/
+    cursor: pointer; /*curosr becomes a pointer when hovering over the button*/
+    color:white; /*color of the text inside the button is white*/
+    
+}
+
+button:hover{ /*while hovering the button*/
+    color: #0096FF; /*color of text becomes blue*/
+    background-color: black; /*background color becomes black*/
+}
+
+input[type=number]::-webkit-inner-spin-button{ /*to remove the arrows withn the input box*/
+    -webkit-appearance: none; /* webkit browsers like google and safari, we set it to none*/
+    appearance: none; /*for other browsers that arent within the Webkit engine */
+}
