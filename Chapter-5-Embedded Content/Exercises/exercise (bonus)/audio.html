@@ -3,41 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petrol Calculator</title>
-
-    <!--adding a faviicon we use the relation icon and state the file type of the image-->
-    <link rel="icon" type="image/png" href="images/petrolicon.png">
-
-    <!--linking a stylesheet-->
-    <link rel="stylesheet" href="style.css">
-
-    <!--to use custom font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Alan Partridge Soundboard</title>
+    <link rel="stylesheet" href="style.css"><!--linking css-->
+    <script src="index.js"></script><!--linking js-->
+    <link rel="icon" type="image--" href="board.png">
 </head>
 <body>
-
-    <!--giving the container div an id so we can customize it seperatly from other divs-->
-    <div id="div1">
-        <h2>Petrol Calculator</h2><hr>
-        <p>Petrol price in £/L</p>
-
-        <!--we use input to allow users to input data, the type of data is number and we add a placeholder-->
-        <input id="Petrolcost" type="number" placeholder="1.72">
-        <p>Liters</p>
-        <input id="Liters" type="number" placeholder="1">
-        <div>
-            <!--when the user clicks the button the function "calc" executes-->
-            <button onclick="calc()">Calculate</button>
-            <p>Total cost:</p>
-
-            <!--p tag with the id totalcost so we can place the total cost here-->
-            <p id="totalcost"></p>
+    <div>
+        <div class="center">
+            <div><h1>Alan Partridge Soundboard</h1></div>
+            <!--buttons of audio-->
+            <!--playAudio() = function in js to play audios
+                this.id = id of the button clicked-->
+            <button id="ah-ha" onclick="playAudio(this.id)">ah-ha</button> 
+            <button id="back-of-the-net" onclick="playAudio(this.id)">back-of-the-net</button>
+            <button id="bangoutoforder" onclick="playAudio(this.id)">bangoutoforder</button>
+            <button id="dan" onclick="playAudio(this.id)">dan</button>
+            <button id="emailoftheevening" onclick="playAudio(this.id)">emailoftheevening</button>
+            <button id="hellopartridge" onclick="playAudio(this.id)">hellopartridge</button>
+            <button id="iateascotchegg" onclick="playAudio(this.id)">iateascotchegg</button>
+            <button id="imconfused" onclick="playAudio(this.id)">imconfused</button>
+            
+            <footer>
+                <small>&copy; 2024 by Precyleigh Caitlin J. Diokno | CC Yr 1 Gr 1<br>
+                <a href="https://www.pinterest.com/pin/26036504089428725/" target="_blank">Image Source</a>
+                <a href="https://thenounproject.com/icon/soundboard-55440/">Icon</a></small>
+            </footer>
         </div>
     </div>
-
-    <!--running the js file-->
-    <script src="index.js"></script>
 </body>
 </html>
