@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petroleum Calculator</title>
-    <link rel="stylesheet" href="simple petrol calculator-CSS.css">
+    <title> chapter 6 -Petrol Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
+
 <body>
-    <div class="container">
-        <h2>Petroleum Calculator</h2>
-        <div class="input-group">
-            <label for="petrolCost">The cost of gasoline per litre (in US dollars):</label>
-            <input type="number" id="petrolCost" value="1.66">
+    <div class="petrol_calculator">
+        <h1>Petrol Calculator</h1>
+        <div class="user-input">
+            <p>Petrol per liter:</p>
+            <input id="Petrol_Price" placeholder="Enter the cost of petrol per liter" type="number" value="1.72">
         </div>
-        <div class="input-group">
-            <label for="litersPurchased">Purchased litres:</label>
-            <input type="number" id="litersPurchased" value="0">
+        <div class="user-input">
+            <p>Number of liters purchased:</p>
+            <input id="liters" placeholder="Enter the number of liters purchased" type="number" value="0">
         </div>
-        <button id="calculateBtn">Compute</button>
-        <p id="totalCost"></p>
+        <div id="button">
+            <button onclick="calculate()">Calculate</button>
+        </div>
+
+        <div id="petrol_purchased">
+            <p>Total amount of petrol purchased: &nbsp</p>
+            <div id="total_box">
+                <p id="total_Amount"></p>
+            </div>
+        </div>
     </div>
-    <script src="simple petrol calculator-index.js"></script>
+
+    <footer> &copy; Made by Mohamed Rashid</footer>
 </body>
+
 </html>
