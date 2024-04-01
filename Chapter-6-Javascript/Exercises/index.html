@@ -1,38 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> chapter 6 -Petrol Calculator</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>  
+  <title>Petrol Calculator</title>
 </head>
-
 <body>
-    <div class="petrol_calculator">
-        <h1>Petrol Calculator</h1>
-        <div class="user-input">
-            <p>Petrol per liter:</p>
-            <input id="Petrol_Price" placeholder="Enter the cost of petrol per liter" type="number" value="1.72">
-        </div>
-        <div class="user-input">
-            <p>Number of liters purchased:</p>
-            <input id="liters" placeholder="Enter the number of liters purchased" type="number" value="0">
-        </div>
-        <div id="button">
-            <button onclick="calculate()">Calculate</button>
-        </div>
-
-        <div id="petrol_purchased">
-            <p>Total amount of petrol purchased: &nbsp</p>
-            <div id="total_box">
-                <p id="total_Amount"></p>
-            </div>
-        </div>
-    </div>
-
-    <footer> &copy; Made by Mohamed Rashid</footer>
+  <div class="calculator">
+    <h2>Petrol Calculator</h2>
+    <label for="petrolCost">Cost of Petrol per liter (in AED):</label><br>
+    <input type="number" id="petrolCost" value="1.72"><br>
+    <label for="litersPurchased">Number of Liters Purchased:</label><br>
+    <input type="number" id="litersPurchased" value="0"><br>
+    <button onclick="calculateTotal()">Calculate</button>
+    <p id="totalCost"></p>
+  </div>
 </body>
-
 </html>
